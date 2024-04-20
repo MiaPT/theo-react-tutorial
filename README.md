@@ -7,7 +7,7 @@
 - [x] Deploy (vercel) (deployed at https://theo-react-tutorial-zeta.vercel.app/)
 - [x] Scaffold basic ui with mock data
 - [x] Tidy up build process
-- [ ] Set up db (vercel postgres)
+- [x] Set up db (vercel postgres)
 - [ ] Attach db to UI
 - [ ] Add authentication (clerk)
 - [ ] Add image upload

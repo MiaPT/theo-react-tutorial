@@ -1,6 +1,4 @@
-
 [From 0 to Production - The Modern React Tutorial (RSCs, Next.js, Shadui, Drizzle, TS and more) (Theo - t3.gg)](https://www.youtube.com/watch?v=d5x0JCZbAJs)
-
 
 ## TODO
 
@@ -11,8 +9,8 @@
 - [x] Attach db to UI
 - [x] Add authentication (clerk)
 - [x] Add image upload
-- [ ] "taint" (server-only)
-- [ ] Use Next/Image component
+- [x] "taint" (server-only)
+- [x] Use Next/Image component
 - [ ] Error management (Sentry)
 - [ ] Routing/image page (parallel route)
 - [ ] Delete button (with Server Actions)
@@ -20,4 +18,5 @@
 - [ ] Ratelimiting (upstash)
 
 notes
-[nextjs blogpost on taint](https://react.dev/reference/react/experimental_taintObjectReference)
+
+- [nextjs blogpost on taint](https://react.dev/reference/react/experimental_taintObjectReference)

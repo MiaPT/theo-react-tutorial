@@ -18,3 +18,6 @@
 - [ ] Delete button (with Server Actions)
 - [ ] Analytics (posthog)
 - [ ] Ratelimiting (upstash)
+
+notes
+[nextjs blogpost on taint](https://react.dev/reference/react/experimental_taintObjectReference)

@@ -19,7 +19,9 @@ const coreConfig = {
 
 import { withSentryConfig } from "@sentry/nextjs";
 
-const config = withSentryConfig(coreConfig, {
+const config = withSentryConfig(
+  coreConfig,
+  {
     // For all available options, see:
     // https://github.com/getsentry/sentry-webpack-plugin#options
 
@@ -55,7 +57,7 @@ const config = withSentryConfig(coreConfig, {
     // https://docs.sentry.io/product/crons/
     // https://vercel.com/docs/cron-jobs
     automaticVercelMonitors: true,
-  })
+  },
+);
 
 export default config;
-

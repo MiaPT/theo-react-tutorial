@@ -22,7 +22,8 @@ export const metadata = {
 };
 
 export default function RootLayout({
-  children, modal
+  children,
+  modal,
 }: {
   children: React.ReactNode;
   modal: React.ReactNode;
@@ -40,12 +41,12 @@ export default function RootLayout({
           routerConfig={extractRouterConfig(ourFileRouter)}
         />
         <body className={`font-sans ${inter.variable} dark`}>
-          <div className="h-screen grid grid-rows-[auto,1fr]">
+          <div className="grid h-screen grid-rows-[auto,1fr]">
             <TopNav />
             <main className="overflow-y-scroll">{children}</main>
           </div>
           {modal}
-          <div id="modal-root"/>
+          <div id="modal-root" />
           <Toaster />
         </body>
       </html>

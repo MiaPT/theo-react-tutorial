@@ -22,3 +22,5 @@ notes
 - [nextjs blogpost on taint](https://react.dev/reference/react/experimental_taintObjectReference)
 
 - [nextjs parallel routing docs](https://nextjs.org/docs/app/building-your-application/routing/parallel-routes)
+
+- [guide to css grid](https://css-tricks.com/snippets/css/complete-guide-grid/)

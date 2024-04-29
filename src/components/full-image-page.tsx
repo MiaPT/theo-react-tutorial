@@ -1,7 +1,10 @@
 import { clerkClient } from "@clerk/nextjs/server";
-import { getImage } from "~/server/queries";
+import { deleteImage, getImage } from "~/server/queries";
+import { Button } from "./ui/button";
 
 export default async function FullPageImageView(props: { id: number }) {
+  const idAsNumber = Number(props.id);
+  if (Number.isNaN(idAsNumber)) throw new Error("Invalid photo id");
   const image = await getImage(props.id);
 
   const uploaderInfo = await clerkClient.users.getUser(image.userID);
@@ -26,6 +29,15 @@ export default async function FullPageImageView(props: { id: number }) {
           <span>Uploaded on</span>
           <span>{new Date(image.createdAt).toLocaleDateString()}</span>
         </div>
+        <div className="flex flex-col p-2">
+          <form action={async () => {
+            "use server";
+            await deleteImage(idAsNumber)
+          }}>
+            <Button variant={"destructive"} type="submit">Delete</Button>
+          </form>
+        </div>
+
       </div>
     </div>
   );

@@ -14,9 +14,9 @@
 - [x] Error management (Sentry)
 - [x] Routing/image page (parallel route)
 - [x] Make upload button prettier
-- [ ] Add shadui toast
-- [ ] Delete button (with Server Actions)
-- [ ] Analytics (posthog)
+- [x] Add shadui toast
+- [x] Analytics (posthog) (skipped some of the later steps in this part)
+- [x] Delete button (with Server Actions)
 - [ ] Ratelimiting (upstash)
 
 notes

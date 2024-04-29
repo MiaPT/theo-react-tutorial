@@ -41,6 +41,9 @@ dependencies:
   postgres:
     specifier: ^3.4.3
     version: 3.4.4
+  posthog-js:
+    specifier: ^1.130.0
+    version: 1.130.0
   react:
     specifier: 18.2.0
     version: 18.2.0
@@ -3648,6 +3651,13 @@ packages:
     dependencies:
       reusify: 1.0.4
 
+  /fflate@0.4.8:
+    resolution:
+      {
+        integrity: sha512-FJqqoDBR00Mdj9ppamLa/Y7vxm+PRmNWA67N846RvsoYVMKB4q3y/de5PA7gUmRMYK/8CMz2GDZQmCRN1wBcWA==,
+      }
+    dev: false
+
   /file-entry-cache@6.0.1:
     resolution:
       {
@@ -5318,6 +5328,23 @@ packages:
         integrity: sha512-IbyN+9KslkqcXa8AO9fxpk97PA4pzewvpi2B3Dwy9u4zpV32QicaEdgmF3eSQUzdRk7ttDHQejNgAEr4XoeH4A==,
       }
     engines: { node: ">=12" }
+    dev: false
+
+  /posthog-js@1.130.0:
+    resolution:
+      {
+        integrity: sha512-bCrw5HunoXLybO20Q1bYEg68i5WCZWKxhStYJK4OR/9jrm7GwZ53GDrN78p8apFi0EH5ay4YZGbLFSkg+SsZWQ==,
+      }
+    dependencies:
+      fflate: 0.4.8
+      preact: 10.20.2
+    dev: false
+
+  /preact@10.20.2:
+    resolution:
+      {
+        integrity: sha512-S1d1ernz3KQ+Y2awUxKakpfOg2CEmJmwOP+6igPx6dgr6pgDvenqYviyokWso2rhHvGtTlWWnJDa7RaPbQerTg==,
+      }
     dev: false
 
   /prelude-ls@1.2.1:
